@@ -1,0 +1,8 @@
+import math
+def sqrt(n):
+    if n >= 0:
+        return(math.sqrt(n))
+    else:
+        return"enter a non-negative number"
+n = float(input("enter a number to find its square root: "))
+print(sqrt(n))
