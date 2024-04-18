@@ -1,0 +1,9 @@
+def rev(nums):
+    ans = []
+    while len(nums)>0:
+        x = nums.pop(0)
+        ans.append(x*x)
+    return ans
+nums = [1, 2, 3]
+revnums = rev(nums)
+print(revnums)
