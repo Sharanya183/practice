@@ -1,0 +1,10 @@
+nums = [1, 2, 3, 3, 4, 4, 4, 3, 3, 5, 7, 3]
+target = 10
+def twosums(nums):
+    nb = set()
+    for i in nums:
+        if target-i in nb:
+            return True
+        nb.add(i)
+    return False
+print(twosums(nums))
