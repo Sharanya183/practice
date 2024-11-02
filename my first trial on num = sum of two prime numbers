@@ -1,0 +1,50 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int isprime(); 
+
+int n, prime = 1;
+
+int main() {
+    
+    int a, b;
+    
+    printf("Enter n: ");
+    scanf("%d", &n);
+    
+    for(a=0; a<=n; a++)
+    {
+        for(b=n; b>=a; b--)
+        {
+            if(isprime(a, b)){
+                printf("%d + %d = %d\n", a, b, n);
+            }
+        }
+    }
+
+    return 0;
+}
+
+int isprime(int x)
+{
+    
+    if(x<=1)
+    {
+        prime = 0;
+    }
+    else{
+        for(int i = 2; i<=x/2; i++)
+        {
+            if(n%i == 0)
+            {
+                prime = 0;
+            }
+            else{
+                prime = 1;
+            }
+        }
+    }
+}
+
+
+
