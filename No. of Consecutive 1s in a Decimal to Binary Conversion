@@ -1,0 +1,26 @@
+n = int(input())
+
+nums = []
+
+rem = nums
+
+while n != 0:
+    rem = n%2
+    n = n//2
+    nums.append(rem)
+    
+    if n == 0:
+        break
+
+binary = nums[::-1]
+
+one = 0
+
+for i in range(len(binary)):
+    if nums[i] == 1:
+        one = one + 1
+    else:
+        one = 0
+        
+print(one)
+    
