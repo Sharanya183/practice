@@ -1,0 +1,22 @@
+#Write a Python function that takes a string and returns the number of vowels in it.
+
+x = str(input("Enter: "))
+
+ctr = 0
+
+for i in range(len(x)):
+    if x[i] == 'a' or x[i] == 'A':
+        ctr = ctr + 1
+    elif x[i] == 'e' or x[i] == 'E':
+        ctr = ctr + 1
+    elif x[i] == 'i' or x[i] == 'I':
+        ctr = ctr + 1
+    elif x[i] == 'o' or x[i] == 'O':
+        ctr = ctr + 1
+    elif x[i] == 'u' or x[i] == 'U':
+        ctr = ctr + 1
+    else:
+        continue
+    
+print(f"Number of vowels in {x} is {ctr}")
+        
