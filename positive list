@@ -1,0 +1,11 @@
+#Write a Python program that takes a list of numbers and returns a new list containing only the positive numbers.
+
+nums = list(map(int, input().split()))
+pos = []
+
+for i in range(len(nums) - 1):
+    if nums[i] > 0:
+        pos.append(nums[i])
+        
+        
+print(pos)
