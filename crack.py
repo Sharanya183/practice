@@ -1,7 +1,7 @@
-from string import digits
+from string import digits, ascii_letters, punctuation
 
-for i in digits:
-    for j in digits:
-        for k in digits:
-            for l in digits:
+for i in ascii_letters + digits + punctuation:
+    for j in ascii_letters + digits + punctuation:
+        for k in ascii_letters + digits + punctuation:
+            for l in ascii_letters + digits + punctuation:
                 print(i, j, k, l)
